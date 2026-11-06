@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #01B5D7;
+  --color-secondary: #fff;
+  --animate-fadeInSlideDown: fadeInSlideDown 1s ease-out forwards;
+  --animate-fadeOutSwipeUp: fadeOutSwipeUp 1s ease-out forwards;
+  --animate-scrollFadeIn: scrollFadeIn 1s ease-out forwards;
+  --animate-slideDown: slideDown .5s ease-out forwards;
+  --font-display: "Space Grotesk", sans-serif;
+  --animate-pingGentle: pingSmall 1s cubic-bezier(0,0,0.2,1) infinite;
+
+  @keyframes fadeInSlideDown {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    },
+    100% {
+      transform: translateY(0)
+      opacity: 1;
+    }
+  }
+
+  @keyframes pingSmall {
+    75%, 100% {
+      transform: scale(1.15);
+      opacity: 0
+    }
+  }
+
+  @keyframes fadeOutSwipeUp {
+    from {
+      transform: translateY(20%);
+      opacity: 0;
+    }
+    to{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes scrollFadeIn {
+    0%{
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0)
+    }
+  }
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-5%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+

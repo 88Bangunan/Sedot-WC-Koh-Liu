@@ -1,0 +1,4 @@
+primary-color = #01B5D7
+secondary-color = white 
+
+navbar: Beranda Layanan Tentang Kami Kontak Area
