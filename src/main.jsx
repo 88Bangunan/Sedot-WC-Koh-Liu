@@ -4,14 +4,16 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from "react-router"
 import { ThemeProvider } from './context/ThemeContext.jsx'
+import { ScrollTop } from './components/ScrollTop.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <ThemeProvider>
-        <div className="font-display">
-          <App />
-        </div>
+        <ScrollTop />
+          <div className="font-display">
+            <App />
+          </div>
       </ThemeProvider>
     </BrowserRouter>
   </StrictMode>,
